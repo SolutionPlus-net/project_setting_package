@@ -1,8 +1,8 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Filters\Admin;
+namespace Otas\ProjectSetting\Filters\Admin;
 
-use Mabrouk\Filterable\Helpers\QueryFilter;
+use Otas\Filterable\Helpers\QueryFilter;
 
 class ProjectSettingTypeFilter extends QueryFilter
 {

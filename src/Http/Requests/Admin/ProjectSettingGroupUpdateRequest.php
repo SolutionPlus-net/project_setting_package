@@ -1,6 +1,6 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Requests\Admin;
+namespace Otas\ProjectSetting\Http\Requests\Admin;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Foundation\Http\FormRequest;
@@ -51,9 +51,9 @@ class ProjectSettingGroupUpdateRequest extends FormRequest
     public function attributes(): array
     {
         return [
-            'slug' => __('mabrouk/project_settings/project_setting_groups.attributes.slug'),
-            'name' => __('mabrouk/project_settings/project_setting_groups.attributes.name'),
-            'description' => __('mabrouk/project_settings/project_setting_groups.attributes.description'),
+            'slug' => __('otas/project_settings/project_setting_groups.attributes.slug'),
+            'name' => __('otas/project_settings/project_setting_groups.attributes.name'),
+            'description' => __('otas/project_settings/project_setting_groups.attributes.description'),
         ];
     }
 }

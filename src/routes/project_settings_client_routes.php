@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Mabrouk\ProjectSetting\Http\Controllers\Client\ProjectSettingController;
-// use Mabrouk\ProjectSetting\Http\Controllers\Client\ProjectSettingTypeController;
-// use Mabrouk\ProjectSetting\Http\Controllers\Client\ProjectSettingGroupController;
-// use Mabrouk\ProjectSetting\Http\Controllers\Client\ProjectSettingSectionController;
+use Otas\ProjectSetting\Http\Controllers\Client\ProjectSettingController;
+// use Otas\ProjectSetting\Http\Controllers\Client\ProjectSettingTypeController;
+// use Otas\ProjectSetting\Http\Controllers\Client\ProjectSettingGroupController;
+// use Otas\ProjectSetting\Http\Controllers\Client\ProjectSettingSectionController;
 
 Route::group([
     'namespace' => 'Client',

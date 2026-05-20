@@ -1,13 +1,13 @@
 <?php
 
-namespace Mabrouk\ProjectSetting;
+namespace Otas\ProjectSetting;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Mabrouk\ProjectSetting\Console\Commands\ProjectSettingInstallCommand;
-use Mabrouk\ProjectSetting\Console\Commands\ProjectSettingPublishRoutesCommand;
-use Mabrouk\ProjectSetting\Console\Commands\ProjectSettingTypeUpdateCommand;
+use Otas\ProjectSetting\Console\Commands\ProjectSettingInstallCommand;
+use Otas\ProjectSetting\Console\Commands\ProjectSettingPublishRoutesCommand;
+use Otas\ProjectSetting\Console\Commands\ProjectSettingTypeUpdateCommand;
 
 class ProjectSettingServiceProvider extends ServiceProvider
 {
@@ -99,7 +99,7 @@ class ProjectSettingServiceProvider extends ServiceProvider
     protected function routeConfiguration()
     {
         return [
-            'namespace' => 'Mabrouk\ProjectSetting\Http\Controllers',
+            'namespace' => 'Otas\ProjectSetting\Http\Controllers',
             'prefix' => config('project_settings.package_routes_prefix'),
         ];
     }

@@ -1,14 +1,14 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Controllers\Admin;
+namespace Otas\ProjectSetting\Http\Controllers\Admin;
 
-use Mabrouk\ProjectSetting\Models\ProjectSettingGroup;
-use Mabrouk\ProjectSetting\Http\Controllers\Controller;
-use Mabrouk\ProjectSetting\Models\ProjectSettingSection;
-use Mabrouk\ProjectSetting\Filters\Admin\ProjectSettingSectionFilter;
-use Mabrouk\ProjectSetting\Http\Resources\Admin\ProjectSettingSectionResource;
-use Mabrouk\ProjectSetting\Http\Requests\Admin\ProjectSettingSectionStoreRequest;
-use Mabrouk\ProjectSetting\Http\Requests\Admin\ProjectSettingSectionUpdateRequest;
+use Otas\ProjectSetting\Models\ProjectSettingGroup;
+use Otas\ProjectSetting\Http\Controllers\Controller;
+use Otas\ProjectSetting\Models\ProjectSettingSection;
+use Otas\ProjectSetting\Filters\Admin\ProjectSettingSectionFilter;
+use Otas\ProjectSetting\Http\Resources\Admin\ProjectSettingSectionResource;
+use Otas\ProjectSetting\Http\Requests\Admin\ProjectSettingSectionStoreRequest;
+use Otas\ProjectSetting\Http\Requests\Admin\ProjectSettingSectionUpdateRequest;
 
 class ProjectSettingSectionController extends Controller
 {
@@ -47,7 +47,7 @@ class ProjectSettingSectionController extends Controller
     //     $projectSettingSection = $request->storeProjectSettingSection();
 
     //     return response([
-    //         'message' => __('mabrouk/project_settings/project_setting_sections.store'),
+    //         'message' => __('otas/project_settings/project_setting_sections.store'),
     //         'project_setting_section' => new ProjectSettingSectionResource($projectSettingSection),
     //     ]);
     // }
@@ -86,7 +86,7 @@ class ProjectSettingSectionController extends Controller
     //     $projectSettingSection = $request->updateProjectSettingSection();
 
     //     return response([
-    //         'message' => __('mabrouk/project_settings/project_setting_sections.update'),
+    //         'message' => __('otas/project_settings/project_setting_sections.update'),
     //         'project_setting_section' => new ProjectSettingSectionResource($projectSettingSection),
     //     ]);
     // }
@@ -102,12 +102,12 @@ class ProjectSettingSectionController extends Controller
     // {
     //     if (!$project_setting_section->remove()) {
     //         return response([
-    //             'message' => __('mabrouk/project_settings/project_setting_sections.cant_destroy'),
+    //             'message' => __('otas/project_settings/project_setting_sections.cant_destroy'),
     //         ], 409);
     //     }
 
     //     return response([
-    //         'message' => __('mabrouk/project_settings/project_setting_sections.destroy'),
+    //         'message' => __('otas/project_settings/project_setting_sections.destroy'),
     //     ]);
     // }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Console\Commands;
+namespace Otas\ProjectSetting\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
@@ -44,7 +44,7 @@ class ProjectSettingPublishRoutesCommand extends Command
         $this->publishRouteFiles($routeFiles, $routesPublishSubDirectory);
 
         $this->callSilent('vendor:publish', [
-            '--provider' => 'Mabrouk\ProjectSetting\ProjectSettingServiceProvider',
+            '--provider' => 'Otas\ProjectSetting\ProjectSettingServiceProvider',
         ]);
 
         exec('composer dump-autoload');

@@ -1,6 +1,6 @@
-# Mabrouk/ProjectSetting
+# otas/ProjectSetting
 
-mabrouk/project-setting is a Laravel api package for dealing with project settings.
+otas/project-setting is a Laravel api package for dealing with project settings.
 
 ## Table of Content
 [Usage sequence](#usage-sequence)
@@ -33,7 +33,7 @@ mabrouk/project-setting is a Laravel api package for dealing with project settin
 You can install the package using composer.
 
 ```bash
-composer require mabrouk/project-setting
+composer require otas/project-setting
 ```
 
 * Now you need to run the following ```command``` in order to migrate package tables and publish ```project_settings.php``` config file to config directory
@@ -81,7 +81,7 @@ php artisan route:list
 ```php
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Resources;
+namespace Otas\ProjectSetting\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -109,7 +109,7 @@ class ProjectSettingGroupResource extends JsonResource
 ```php
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Resources;
+namespace Otas\ProjectSetting\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -136,7 +136,7 @@ class ProjectSettingGroupSimpleResource extends JsonResource
 ```php
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Resources;
+namespace Otas\ProjectSetting\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -166,7 +166,7 @@ class ProjectSettingResource extends JsonResource
 ```php
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Resources;
+namespace Otas\ProjectSetting\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -194,9 +194,9 @@ class SubProjectSettingResource extends JsonResource
 ```php
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Resources;
+namespace Otas\ProjectSetting\Http\Resources;
 
-use Mabrouk\ProjectSetting\Models\ProjectSettingGroup;
+use Otas\ProjectSetting\Models\ProjectSettingGroup;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class RoleResource extends JsonResource
@@ -223,7 +223,7 @@ class RoleResource extends JsonResource
 ```php
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Resources;
+namespace Otas\ProjectSetting\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
@@ -247,7 +247,7 @@ class RoleSimpleResource extends JsonResource
 ``` -->
 
 ## Any thing else?
-Actually one more thing to know is that this package depend on [mabrouk/translatable](https://github.com/ah-mabrouk/Translatable) package in order to handle translation dynamically for any chosen language.
+Actually one more thing to know is that this package depend on [otas/translatable](https://github.com/SolutionPlus-net/Translatable) package in order to handle translation dynamically for any chosen language.
 
 > You will need to pass additional input "locale" in update requests of mentioned models and need to create groups and sections with your application default language.
 
@@ -257,4 +257,4 @@ To get response with desired language you need to pass additional header to your
 
 ## License
 
-mabrouk/project-setting package is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+otas/project-setting package is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

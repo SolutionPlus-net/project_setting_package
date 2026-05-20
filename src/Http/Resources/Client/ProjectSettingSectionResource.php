@@ -1,6 +1,6 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Resources\Client;
+namespace Otas\ProjectSetting\Http\Resources\Client;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

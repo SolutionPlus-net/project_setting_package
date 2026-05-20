@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Mabrouk\ProjectSetting\Http\Controllers\Backend\ProjectSettingGroupController;
-use Mabrouk\ProjectSetting\Http\Controllers\Backend\ProjectSettingController;
-use Mabrouk\ProjectSetting\Http\Controllers\Backend\ProjectSettingSectionController;
+use Otas\ProjectSetting\Http\Controllers\Backend\ProjectSettingGroupController;
+use Otas\ProjectSetting\Http\Controllers\Backend\ProjectSettingController;
+use Otas\ProjectSetting\Http\Controllers\Backend\ProjectSettingSectionController;
 
 Route::group([
     'namespace' => 'Backend',

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Requests\Admin;
+namespace Otas\ProjectSetting\Http\Requests\Admin;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Foundation\Http\FormRequest;
@@ -44,8 +44,8 @@ class ProjectSettingSectionUpdateRequest extends FormRequest
     public function attributes(): array
     {
         return [
-            'name' => __('mabrouk/project_settings/project_setting_sections.attributes.name'),
-            'description' => __('mabrouk/project_settings/project_setting_sections.attributes.description'),
+            'name' => __('otas/project_settings/project_setting_sections.attributes.name'),
+            'description' => __('otas/project_settings/project_setting_sections.attributes.description'),
         ];
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Console\Commands;
+namespace Otas\ProjectSetting\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Collection;
-use Mabrouk\ProjectSetting\Models\ProjectSettingType;
+use Otas\ProjectSetting\Models\ProjectSettingType;
 
 class ProjectSettingTypeUpdateCommand extends Command
 {

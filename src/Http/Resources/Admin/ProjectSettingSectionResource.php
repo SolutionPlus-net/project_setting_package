@@ -1,6 +1,6 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Resources\Admin;
+namespace Otas\ProjectSetting\Http\Resources\Admin;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 

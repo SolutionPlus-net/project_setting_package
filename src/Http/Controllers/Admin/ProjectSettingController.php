@@ -1,15 +1,15 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Controllers\Admin;
+namespace Otas\ProjectSetting\Http\Controllers\Admin;
 
-use Mabrouk\ProjectSetting\Models\ProjectSetting;
-use Mabrouk\ProjectSetting\Models\ProjectSettingGroup;
-use Mabrouk\ProjectSetting\Http\Controllers\Controller;
-use Mabrouk\ProjectSetting\Models\ProjectSettingSection;
-use Mabrouk\ProjectSetting\Filters\Admin\ProjectSettingFilter;
+use Otas\ProjectSetting\Models\ProjectSetting;
+use Otas\ProjectSetting\Models\ProjectSettingGroup;
+use Otas\ProjectSetting\Http\Controllers\Controller;
+use Otas\ProjectSetting\Models\ProjectSettingSection;
+use Otas\ProjectSetting\Filters\Admin\ProjectSettingFilter;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Mabrouk\ProjectSetting\Http\Resources\Admin\ProjectSettingResource;
-use Mabrouk\ProjectSetting\Http\Requests\Admin\ProjectSettingUpdateRequest;
+use Otas\ProjectSetting\Http\Resources\Admin\ProjectSettingResource;
+use Otas\ProjectSetting\Http\Requests\Admin\ProjectSettingUpdateRequest;
 
 class ProjectSettingController extends Controller
 {
@@ -62,7 +62,7 @@ class ProjectSettingController extends Controller
         $projectSetting = $request->updateProjectSetting();
 
         return response([
-            'message' => __('mabrouk/project_settings/project_settings.update'),
+            'message' => __('otas/project_settings/project_settings.update'),
             'project_setting' => new ProjectSettingResource($projectSetting),
         ]);
     }

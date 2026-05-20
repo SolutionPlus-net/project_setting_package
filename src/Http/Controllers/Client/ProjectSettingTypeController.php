@@ -1,11 +1,11 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Controllers\Client;
+namespace Otas\ProjectSetting\Http\Controllers\Client;
 
-use Mabrouk\ProjectSetting\Models\ProjectSettingType;
-use Mabrouk\ProjectSetting\Http\Controllers\Controller;
-use Mabrouk\ProjectSetting\Filters\Client\ProjectSettingTypeFilter;
-use Mabrouk\ProjectSetting\Http\Resources\Client\ProjectSettingTypeResource;
+use Otas\ProjectSetting\Models\ProjectSettingType;
+use Otas\ProjectSetting\Http\Controllers\Controller;
+use Otas\ProjectSetting\Filters\Client\ProjectSettingTypeFilter;
+use Otas\ProjectSetting\Http\Resources\Client\ProjectSettingTypeResource;
 
 class ProjectSettingTypeController extends Controller
 {

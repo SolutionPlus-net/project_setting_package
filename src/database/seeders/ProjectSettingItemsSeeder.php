@@ -4,9 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
-use Mabrouk\ProjectSetting\Models\ProjectSetting;
-use Mabrouk\ProjectSetting\Models\ProjectSettingType;
-use Mabrouk\ProjectSetting\Models\ProjectSettingSection;
+use Otas\ProjectSetting\Models\ProjectSetting;
+use Otas\ProjectSetting\Models\ProjectSettingType;
+use Otas\ProjectSetting\Models\ProjectSettingSection;
 
 class ProjectSettingItemsSeeder extends Seeder
 {
