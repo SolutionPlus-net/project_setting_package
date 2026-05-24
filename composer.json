@@ -14,10 +14,10 @@
         "laravel/framework": ">=9",
         "otas/translatable": ">=1.0",
         "otas/filterable": ">=1.0",
-        "otas/mediable": ">=3"
+        "otas/mediable": ">=1"
     },
     "require-dev": {
-        "orchestra/testbench": "^7.0@dev"
+        "orchestra/testbench": "^9.0@dev"
     },
     "extra": {
         "laravel": {
