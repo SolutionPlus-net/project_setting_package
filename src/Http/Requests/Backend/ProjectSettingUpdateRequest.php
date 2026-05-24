@@ -1,11 +1,11 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Requests\Backend;
+namespace Otas\ProjectSetting\Http\Requests\Backend;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Foundation\Http\FormRequest;
-use Mabrouk\ProjectSetting\Models\ProjectSetting;
+use Otas\ProjectSetting\Models\ProjectSetting;
 
 class ProjectSettingUpdateRequest extends FormRequest
 {
@@ -135,19 +135,19 @@ class ProjectSettingUpdateRequest extends FormRequest
     public function attributes(): array
     {
         return [
-            'section' => __('mabrouk/project_settings/project_settings.attributes.section'),
-            'name' => __('mabrouk/project_settings/project_settings.attributes.name'),
-            'description' => __('mabrouk/project_settings/project_settings.attributes.description'),
-            'custom_validation_rules' => __('mabrouk/project_settings/project_settings.attributes.custom_validation_rules'),
-            'editable' => __('mabrouk/project_settings/project_settings.attributes.editable'),
-            'return_to_client' => __('mabrouk/project_settings/project_settings.attributes.return_to_client'),
-            'phone' => __('mabrouk/project_settings/project_settings.attributes.phone.phone'),
-            'phone.number' => __('mabrouk/project_settings/project_settings.attributes.phone.number'),
-            'phone.country_code' => __('mabrouk/project_settings/project_settings.attributes.phone.country_code'),
-            'image' => __('mabrouk/project_settings/project_settings.attributes.image'),
-            'value' => __('mabrouk/project_settings/project_settings.attributes.value'),
-            'displayed' => __('mabrouk/project_settings/project_settings.attributes.displayed'),
-            'admin_has_display_control' => __('mabrouk/project_settings/project_settings.attributes.admin_has_display_control'),
+            'section' => __('otas/project_settings/project_settings.attributes.section'),
+            'name' => __('otas/project_settings/project_settings.attributes.name'),
+            'description' => __('otas/project_settings/project_settings.attributes.description'),
+            'custom_validation_rules' => __('otas/project_settings/project_settings.attributes.custom_validation_rules'),
+            'editable' => __('otas/project_settings/project_settings.attributes.editable'),
+            'return_to_client' => __('otas/project_settings/project_settings.attributes.return_to_client'),
+            'phone' => __('otas/project_settings/project_settings.attributes.phone.phone'),
+            'phone.number' => __('otas/project_settings/project_settings.attributes.phone.number'),
+            'phone.country_code' => __('otas/project_settings/project_settings.attributes.phone.country_code'),
+            'image' => __('otas/project_settings/project_settings.attributes.image'),
+            'value' => __('otas/project_settings/project_settings.attributes.value'),
+            'displayed' => __('otas/project_settings/project_settings.attributes.displayed'),
+            'admin_has_display_control' => __('otas/project_settings/project_settings.attributes.admin_has_display_control'),
         ];
     }
 }

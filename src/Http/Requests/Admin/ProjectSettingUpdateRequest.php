@@ -1,11 +1,11 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Requests\Admin;
+namespace Otas\ProjectSetting\Http\Requests\Admin;
 
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Foundation\Http\FormRequest;
-use Mabrouk\ProjectSetting\Models\ProjectSetting;
+use Otas\ProjectSetting\Models\ProjectSetting;
 
 class ProjectSettingUpdateRequest extends FormRequest
 {
@@ -37,7 +37,7 @@ class ProjectSettingUpdateRequest extends FormRequest
                 'boolean',
                 function ($attribute, $value, $fail) {
                     if (!$this->project_setting->is_admin_has_display_control) {
-                        $fail(__('mabrouk/project_settings/project_settings.errors.displayed_not_allowed'));
+                        $fail(__('otas/project_settings/project_settings.errors.displayed_not_allowed'));
                     }
                 },
             ],
@@ -130,15 +130,15 @@ class ProjectSettingUpdateRequest extends FormRequest
     public function attributes(): array
     {
         return [
-            'section' => __('mabrouk/project_settings/project_settings.attributes.section'),
-            'name' => __('mabrouk/project_settings/project_settings.attributes.name'),
-            'description' => __('mabrouk/project_settings/project_settings.attributes.description'),
-            'phone' => __('mabrouk/project_settings/project_settings.attributes.phone.phone'),
-            'phone.number' => __('mabrouk/project_settings/project_settings.attributes.phone.number'),
-            'phone.country_code' => __('mabrouk/project_settings/project_settings.attributes.phone.country_code'),
-            'image' => __('mabrouk/project_settings/project_settings.attributes.image'),
-            'value' => __('mabrouk/project_settings/project_settings.attributes.value'),
-            'displayed' => __('mabrouk/project_settings/project_settings.attributes.displayed'),
+            'section' => __('otas/project_settings/project_settings.attributes.section'),
+            'name' => __('otas/project_settings/project_settings.attributes.name'),
+            'description' => __('otas/project_settings/project_settings.attributes.description'),
+            'phone' => __('otas/project_settings/project_settings.attributes.phone.phone'),
+            'phone.number' => __('otas/project_settings/project_settings.attributes.phone.number'),
+            'phone.country_code' => __('otas/project_settings/project_settings.attributes.phone.country_code'),
+            'image' => __('otas/project_settings/project_settings.attributes.image'),
+            'value' => __('otas/project_settings/project_settings.attributes.value'),
+            'displayed' => __('otas/project_settings/project_settings.attributes.displayed'),
         ];
     }
 }

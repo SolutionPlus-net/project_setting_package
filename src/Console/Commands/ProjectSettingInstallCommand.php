@@ -1,6 +1,6 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Console\Commands;
+namespace Otas\ProjectSetting\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -21,7 +21,7 @@ class ProjectSettingInstallCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Install and Publish Mabrouk Project Setting Package';
+    protected $description = 'Install and Publish Otas Project Setting Package';
 
     /**
      * Execute the console command.
@@ -83,7 +83,7 @@ class ProjectSettingInstallCommand extends Command
     private function publishConfiguration(bool $forcePublish = false): void
     {
         $params = [
-            '--provider' => 'Mabrouk\ProjectSetting\ProjectSettingServiceProvider',
+            '--provider' => 'Otas\ProjectSetting\ProjectSettingServiceProvider',
         ];
 
         if ($forcePublish) {

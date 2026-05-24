@@ -1,10 +1,10 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Requests\Admin;
+namespace Otas\ProjectSetting\Http\Requests\Admin;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Foundation\Http\FormRequest;
-use Mabrouk\ProjectSetting\Models\ProjectSettingSection;
+use Otas\ProjectSetting\Models\ProjectSettingSection;
 
 class ProjectSettingSectionStoreRequest extends FormRequest
 {
@@ -59,9 +59,9 @@ class ProjectSettingSectionStoreRequest extends FormRequest
     public function attributes(): array
     {
         return [
-            'key' => __('mabrouk/project_settings/project_setting_sections.attributes.key'),
-            'name' => __('mabrouk/project_settings/project_setting_sections.attributes.name'),
-            'description' => __('mabrouk/project_settings/project_setting_sections.attributes.description'),
+            'key' => __('otas/project_settings/project_setting_sections.attributes.key'),
+            'name' => __('otas/project_settings/project_setting_sections.attributes.name'),
+            'description' => __('otas/project_settings/project_setting_sections.attributes.description'),
         ];
     }
 }

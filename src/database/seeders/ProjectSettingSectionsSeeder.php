@@ -3,8 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Mabrouk\ProjectSetting\Models\ProjectSettingGroup;
-use Mabrouk\ProjectSetting\Models\ProjectSettingSection;
+use Otas\ProjectSetting\Models\ProjectSettingGroup;
+use Otas\ProjectSetting\Models\ProjectSettingSection;
 
 class ProjectSettingSectionsSeeder extends Seeder
 {

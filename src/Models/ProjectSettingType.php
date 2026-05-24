@@ -1,12 +1,12 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Models;
+namespace Otas\ProjectSetting\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Mabrouk\Filterable\Traits\Filterable;
+use Otas\Filterable\Traits\Filterable;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Mabrouk\ProjectSetting\database\factories\ProjectSettingTypeFactory;
+use Otas\ProjectSetting\database\factories\ProjectSettingTypeFactory;
 
 class ProjectSettingType extends Model
 {

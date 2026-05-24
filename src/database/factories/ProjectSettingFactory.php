@@ -1,11 +1,11 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\database\factories;
+namespace Otas\ProjectSetting\database\factories;
 
-use Mabrouk\ProjectSetting\Models\ProjectSetting;
+use Otas\ProjectSetting\Models\ProjectSetting;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Mabrouk\ProjectSetting\Models\ProjectSettingType;
-use Mabrouk\ProjectSetting\Models\ProjectSettingGroup;
+use Otas\ProjectSetting\Models\ProjectSettingType;
+use Otas\ProjectSetting\Models\ProjectSettingGroup;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory

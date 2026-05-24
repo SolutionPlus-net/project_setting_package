@@ -1,8 +1,8 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Traits;
+namespace Otas\ProjectSetting\Traits;
 
-use Mabrouk\ProjectSetting\Models\ProjectSettingPhone;
+use Otas\ProjectSetting\Models\ProjectSettingPhone;
 
 Trait HasPhone
 {

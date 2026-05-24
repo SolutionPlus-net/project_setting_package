@@ -1,8 +1,8 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Tests;
+namespace Otas\ProjectSetting\Tests;
 
-use Mabrouk\ProjectSetting\ProjectSettingServiceProvider;
+use Otas\ProjectSetting\ProjectSettingServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Resources\Client;
+namespace Otas\ProjectSetting\Http\Resources\Client;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use Mabrouk\Mediable\Http\Resources\MediaResource;
+use Otas\Mediable\Http\Resources\MediaResource;
 
 class ProjectSettingSimpleResource extends JsonResource
 {

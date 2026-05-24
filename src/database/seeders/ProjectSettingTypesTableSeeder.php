@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Artisan;
-use Mabrouk\ProjectSetting\Models\ProjectSettingType;
+use Otas\ProjectSetting\Models\ProjectSettingType;
 
 class ProjectSettingTypesTableSeeder extends Seeder
 {

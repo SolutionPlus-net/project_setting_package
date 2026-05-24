@@ -1,8 +1,8 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Filters\Backend;
+namespace Otas\ProjectSetting\Filters\Backend;
 
-use Mabrouk\Filterable\Helpers\QueryFilter;
+use Otas\Filterable\Helpers\QueryFilter;
 
 class ProjectSettingSectionFilter extends QueryFilter
 {

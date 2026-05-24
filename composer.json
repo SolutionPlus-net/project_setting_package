@@ -1,5 +1,5 @@
 {
-    "name": "mabrouk/project-setting",
+    "name": "otas/project-setting",
     "description": "a laravel package to handle dealing with project setting in groups",
     "type": "library",
     "license": "MIT",
@@ -12,23 +12,23 @@
     "minimum-stability": "dev",
     "require": {
         "laravel/framework": ">=9",
-        "mabrouk/translatable": ">=1.0",
-        "mabrouk/filterable": ">=1.0",
-        "mabrouk/mediable": ">=3"
+        "otas/translatable": ">=1.0",
+        "otas/filterable": ">=1.0",
+        "otas/mediable": ">=1"
     },
     "require-dev": {
-        "orchestra/testbench": "^7.0@dev"
+        "orchestra/testbench": "^9.0@dev"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Mabrouk\\ProjectSetting\\ProjectSettingServiceProvider"
+                "Otas\\ProjectSetting\\ProjectSettingServiceProvider"
             ]
         }
     },
     "autoload": {
         "psr-4": {
-            "Mabrouk\\ProjectSetting\\": "src/",
+            "Otas\\ProjectSetting\\": "src/",
             "Database\\Factories\\": "src/database/factories/",
             "Database\\Seeders\\": "src/database/seeders/"
         }

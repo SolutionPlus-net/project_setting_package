@@ -1,13 +1,13 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Controllers\Admin;
+namespace Otas\ProjectSetting\Http\Controllers\Admin;
 
-use Mabrouk\ProjectSetting\Models\ProjectSettingGroup;
-use Mabrouk\ProjectSetting\Http\Controllers\Controller;
-use Mabrouk\ProjectSetting\Filters\Admin\ProjectSettingGroupFilter;
-use Mabrouk\ProjectSetting\Http\Resources\Admin\ProjectSettingGroupResource;
-use Mabrouk\ProjectSetting\Http\Requests\Admin\ProjectSettingGroupStoreRequest;
-use Mabrouk\ProjectSetting\Http\Requests\Admin\ProjectSettingGroupUpdateRequest;
+use Otas\ProjectSetting\Models\ProjectSettingGroup;
+use Otas\ProjectSetting\Http\Controllers\Controller;
+use Otas\ProjectSetting\Filters\Admin\ProjectSettingGroupFilter;
+use Otas\ProjectSetting\Http\Resources\Admin\ProjectSettingGroupResource;
+use Otas\ProjectSetting\Http\Requests\Admin\ProjectSettingGroupStoreRequest;
+use Otas\ProjectSetting\Http\Requests\Admin\ProjectSettingGroupUpdateRequest;
 
 class ProjectSettingGroupController extends Controller
 {
@@ -36,7 +36,7 @@ class ProjectSettingGroupController extends Controller
     //     $projectSettingGroup = $request->storeProjectSettingGroup();
 
     //     return response([
-    //         'message' => __('mabrouk/project_settings/project_setting_groups.store'),
+    //         'message' => __('otas/project_settings/project_setting_groups.store'),
     //         'project_setting_group' => new ProjectSettingGroupResource($projectSettingGroup),
     //     ]);
     // }
@@ -66,7 +66,7 @@ class ProjectSettingGroupController extends Controller
     //     $projectSettingGroup = $request->updateProjectSettingGroup();
 
     //     return response([
-    //         'message' => __('mabrouk/project_settings/project_setting_groups.update'),
+    //         'message' => __('otas/project_settings/project_setting_groups.update'),
     //         'project_setting_group' => new ProjectSettingGroupResource($projectSettingGroup),
     //     ]);
     // }
@@ -81,12 +81,12 @@ class ProjectSettingGroupController extends Controller
     // {
     //     if (!$project_setting_group->remove()) {
     //         return response([
-    //             'message' => __('mabrouk/project_settings/project_setting_groups.cant_destroy'),
+    //             'message' => __('otas/project_settings/project_setting_groups.cant_destroy'),
     //         ], 409);
     //     }
 
     //     return response([
-    //         'message' => __('mabrouk/project_settings/project_setting_groups.destroy'),
+    //         'message' => __('otas/project_settings/project_setting_groups.destroy'),
     //     ]);
     // }
 }

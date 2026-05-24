@@ -1,13 +1,13 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Controllers\Backend;
+namespace Otas\ProjectSetting\Http\Controllers\Backend;
 
-use Mabrouk\ProjectSetting\Filters\Backend\ProjectSettingGroupFilter;
-use Mabrouk\ProjectSetting\Http\Controllers\Controller;
-use Mabrouk\ProjectSetting\Http\Requests\Backend\ProjectSettingGroupStoreRequest;
-use Mabrouk\ProjectSetting\Http\Requests\Backend\ProjectSettingGroupUpdateRequest;
-use Mabrouk\ProjectSetting\Http\Resources\Backend\ProjectSettingGroupResource;
-use Mabrouk\ProjectSetting\Models\ProjectSettingGroup;
+use Otas\ProjectSetting\Filters\Backend\ProjectSettingGroupFilter;
+use Otas\ProjectSetting\Http\Controllers\Controller;
+use Otas\ProjectSetting\Http\Requests\Backend\ProjectSettingGroupStoreRequest;
+use Otas\ProjectSetting\Http\Requests\Backend\ProjectSettingGroupUpdateRequest;
+use Otas\ProjectSetting\Http\Resources\Backend\ProjectSettingGroupResource;
+use Otas\ProjectSetting\Models\ProjectSettingGroup;
 
 class ProjectSettingGroupController extends Controller
 {
@@ -36,7 +36,7 @@ class ProjectSettingGroupController extends Controller
         $projectSettingGroup = $request->storeProjectSettingGroup();
 
         return response([
-            'message' => __('mabrouk/project_settings/project_setting_groups.store'),
+            'message' => __('otas/project_settings/project_setting_groups.store'),
             'project_setting_group' => new ProjectSettingGroupResource($projectSettingGroup),
         ]);
     }
@@ -66,7 +66,7 @@ class ProjectSettingGroupController extends Controller
         $projectSettingGroup = $request->updateProjectSettingGroup();
 
         return response([
-            'message' => __('mabrouk/project_settings/project_setting_groups.update'),
+            'message' => __('otas/project_settings/project_setting_groups.update'),
             'project_setting_group' => new ProjectSettingGroupResource($projectSettingGroup),
         ]);
     }

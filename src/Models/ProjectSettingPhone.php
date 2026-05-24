@@ -1,6 +1,6 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Models;
+namespace Otas\ProjectSetting\Models;
 
 use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;

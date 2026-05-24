@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Mabrouk\ProjectSetting\Http\Controllers\Admin\ProjectSettingController;
-use Mabrouk\ProjectSetting\Http\Controllers\Admin\ProjectSettingTypeController;
-use Mabrouk\ProjectSetting\Http\Controllers\Admin\ProjectSettingGroupController;
-use Mabrouk\ProjectSetting\Http\Controllers\Admin\ProjectSettingSectionController;
+use Otas\ProjectSetting\Http\Controllers\Admin\ProjectSettingController;
+use Otas\ProjectSetting\Http\Controllers\Admin\ProjectSettingTypeController;
+use Otas\ProjectSetting\Http\Controllers\Admin\ProjectSettingGroupController;
+use Otas\ProjectSetting\Http\Controllers\Admin\ProjectSettingSectionController;
 
 Route::group([
     'namespace' => 'Admin',

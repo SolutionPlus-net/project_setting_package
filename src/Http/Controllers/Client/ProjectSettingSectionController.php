@@ -1,12 +1,12 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Controllers\Client;
+namespace Otas\ProjectSetting\Http\Controllers\Client;
 
-use Mabrouk\ProjectSetting\Models\ProjectSettingGroup;
-use Mabrouk\ProjectSetting\Http\Controllers\Controller;
-use Mabrouk\ProjectSetting\Models\ProjectSettingSection;
-use Mabrouk\ProjectSetting\Filters\Client\ProjectSettingSectionFilter;
-use Mabrouk\ProjectSetting\Http\Resources\Client\ProjectSettingSectionResource;
+use Otas\ProjectSetting\Models\ProjectSettingGroup;
+use Otas\ProjectSetting\Http\Controllers\Controller;
+use Otas\ProjectSetting\Models\ProjectSettingSection;
+use Otas\ProjectSetting\Filters\Client\ProjectSettingSectionFilter;
+use Otas\ProjectSetting\Http\Resources\Client\ProjectSettingSectionResource;
 
 class ProjectSettingSectionController extends Controller
 {

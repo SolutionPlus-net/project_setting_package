@@ -1,13 +1,13 @@
 <?php
 
-namespace Mabrouk\ProjectSetting\Http\Controllers\Backend;
+namespace Otas\ProjectSetting\Http\Controllers\Backend;
 
-use Mabrouk\ProjectSetting\Http\Requests\Backend\ProjectSettingStoreRequest;
-use Mabrouk\ProjectSetting\Models\ProjectSetting;
-use Mabrouk\ProjectSetting\Http\Controllers\Controller;
-use Mabrouk\ProjectSetting\Filters\Backend\ProjectSettingFilter;
-use Mabrouk\ProjectSetting\Http\Resources\Backend\ProjectSettingResource;
-use Mabrouk\ProjectSetting\Http\Requests\Backend\ProjectSettingUpdateRequest;
+use Otas\ProjectSetting\Http\Requests\Backend\ProjectSettingStoreRequest;
+use Otas\ProjectSetting\Models\ProjectSetting;
+use Otas\ProjectSetting\Http\Controllers\Controller;
+use Otas\ProjectSetting\Filters\Backend\ProjectSettingFilter;
+use Otas\ProjectSetting\Http\Resources\Backend\ProjectSettingResource;
+use Otas\ProjectSetting\Http\Requests\Backend\ProjectSettingUpdateRequest;
 
 class ProjectSettingController extends Controller
 {
@@ -36,7 +36,7 @@ class ProjectSettingController extends Controller
         $projectSetting = $request->storeProjectSetting();
 
         return response([
-            'message' => __('mabrouk/project_settings/project_settings.store'),
+            'message' => __('otas/project_settings/project_settings.store'),
             'project_setting' => new ProjectSettingResource($projectSetting),
         ]);
     }
@@ -54,7 +54,7 @@ class ProjectSettingController extends Controller
         $projectSetting = $request->updateProjectSetting();
 
         return response([
-            'message' => __('mabrouk/project_settings/project_settings.update'),
+            'message' => __('otas/project_settings/project_settings.update'),
             'project_setting' => new ProjectSettingResource($projectSetting),
         ]);
     }
